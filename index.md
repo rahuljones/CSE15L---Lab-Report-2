@@ -54,6 +54,10 @@ class StringServer {
     }
 }
 ```
+The server returns these words when arguements are passed through the url:
+
+![Image](Screen%20Shot%202023-01-26%20at%205.49.54%20PM.png)
+![Image](Screen%20Shot%202023-01-26%20at%205.50.21%20PM.png)
 
 Which methods in your code are called?
 What are the relevant arguments to those methods, and the values of any relevant fields of the class?
@@ -80,7 +84,11 @@ This JUnit test case worked as a failure inducing input:
 ```
 The method before it was changed:
 ```
-
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
 ```
 The method after it was changed:
 ```
