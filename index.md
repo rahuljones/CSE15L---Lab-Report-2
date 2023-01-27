@@ -57,8 +57,10 @@ class StringServer {
 The server returns these words when arguements are passed through the url:
 
 ![Image](Screen%20Shot%202023-01-26%20at%205.49.54%20PM.png)
+Here the Handler method is called. This method uses the argument that is passed in through the url of the website. It takes in the value after the equal
+sign and adds it to the array of words that are to be printed. The value of the array is not the only one that is changed. The value of the string that is printed is also changed.
 ![Image](Screen%20Shot%202023-01-26%20at%205.50.21%20PM.png)
-
+In this second example, the handler method is again called with a new argument.
 Which methods in your code are called?
 What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
@@ -102,3 +104,6 @@ The method after it was changed:
     }
   }
   ```
+  **Part 3: What I learned**
+  
+  One of the new things that I learned in lab from these two weeks was how to push code to Github. I also learned how to take code from Github, edit it in Visual Studio Code and push my changes onto Github. I had never previously known that Github code could be so easily accessed and edited from the desktop.
