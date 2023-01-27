@@ -63,29 +63,30 @@ sign and adds it to the array of words that are to be printed. The value of the 
 
 ![Image](Screen%20Shot%202023-01-26%20at%205.50.21%20PM.png)
 
-In this second example, the handler method is again called with a new argument.
+In this second example, the handler method is again called with a new argument .
 Which methods in your code are called?
 What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+
 **Part 2: Lab 3 bugs**
+
 This JUnit test case worked as a failure inducing input:
 ```
-    @Test 
-	public void testMultipleReverseInPlace() {
-    int[] input1 = { 1, 2, 3, 4 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 4, 3, 2, 1 }, input1);
-	}
-   ```
+@Test 
+public void testMultipleReverseInPlace() {
+	int[] input1 = { 1, 2, 3, 4 };
+	ArrayExamples.reverseInPlace(input1);
+	assertArrayEquals(new int[]{ 4, 3, 2, 1 }, input1);
+}
+```
    This JUnit test case did not induce a failure:
-   ```
-  @Test
-  public void testEmptyReverseInPlace() {
-    int[] input1 = { };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ }, input1);
-	}
-
+```
+@Test
+public void testEmptyReverseInPlace() {
+	int[] input1 = { };
+	ArrayExamples.reverseInPlace(input1);
+	assertArrayEquals(new int[]{ }, input1);
+}
 ```
 The method before it was changed:
 ```
