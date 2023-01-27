@@ -58,8 +58,7 @@ The server returns these words when arguements are passed through the url:
 
 ![Image](Screen%20Shot%202023-01-26%20at%205.49.54%20PM.png)
 
-Here the Handler method is called. This method uses the argument that is passed in through the url of the website. It takes in the value after the equal
-sign and adds it to the array of words that are to be printed. The value of the array is not the only one that is changed. The value of the string that is printed is also changed.
+Here the Handler method is called. This method uses the argument that is passed in through the url of the website. In this case, the arguemnt that was passed in was the string "Hello". The method takes in the value after the equal sign and adds it to the array of words that are to be printed. The value of the array is not the only one that is changed. The value of the string that is printed is also changed.
 
 ![Image](Screen%20Shot%202023-01-26%20at%205.50.21%20PM.png)
 
