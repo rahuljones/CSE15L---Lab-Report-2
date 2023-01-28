@@ -62,7 +62,7 @@ Here the Handler method is called. This method uses the argument that is passed 
 
 ![Image](Screen%20Shot%202023-01-26%20at%205.50.21%20PM.png)
 
-In this second example, the handler method is again called with a new argument: "WhatIsUp". This method again gets this parameter through the url and using the delimiter of the "=" to find this parameter. This paramter is added to the arraylist of the words to change the value of the arraylist to {Hello, WhatIsUp}. The value of the string that is printed is also changed to include "WhatIsUp".
+In this second example, the handler method is again called with a new argument: "WhatIsUp". This method again gets this parameter through the url and using the delimiter of the "=" to find this parameter. This parameter is added to the arraylist of the words to change the value of the arraylist to {Hello, WhatIsUp}. The value of the string that is printed is also changed to include "WhatIsUp".
 
 **Part 2: Lab 3 bugs**
 
