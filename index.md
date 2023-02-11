@@ -109,7 +109,7 @@ The method after it was changed:
   }
   ```
   
-  This fix addresses the issue by storing the old data in a separate array before it starts reversing the original array. Previously, the reversing method would change values in the array while iterating through it which would lead to the array being reversed incorrectly. This fix allows the program to be able to correctly reverse the array instead of getting an incorrect result.
+  This fix addresses the issue by storing the old data in a separate variable before it starts reversing the original array. Previously, the reversing method would change values in the array while iterating through it which would lead to the array being reversed incorrectly. This fix allows the program to be able to correctly reverse the array instead of getting an incorrect result.
   
   **Part 3: What I learned**
   
