@@ -74,10 +74,9 @@ public void testMultipleReverseInPlace() {
 	ArrayExamples.reverseInPlace(input1);
 	assertArrayEquals(new int[]{ 4, 3, 2, 1 }, input1);
 }
-```
-THis 
+``` 
 
-   This JUnit test case did not induce a failure:
+   This JUnit test case did not induce a failure because it has an empty array, so the method will just return an empty array back. In this case, there are no values that are changed, so the method returns the correct value:
 ```
 @Test
 public void testEmptyReverseInPlace() {
@@ -86,6 +85,10 @@ public void testEmptyReverseInPlace() {
 	assertArrayEquals(new int[]{ }, input1);
 }
 ```
+This is what the result of the JUnit tests looked like:
+![Image](Screen%20Shot%202023-02-11%20at%207.45.53%20AM.png)
+
+
 The method before it was changed:
 ```
 static void reverseInPlace(int[] arr) {
