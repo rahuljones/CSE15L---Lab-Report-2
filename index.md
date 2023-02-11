@@ -54,7 +54,7 @@ class StringServer {
     }
 }
 ```
-The server returns these words when arguements are passed through the url:
+The server returns these words when arguments are passed through the url:
 
 ![Image](Screen%20Shot%202023-01-26%20at%205.49.54%20PM.png)
 
@@ -66,7 +66,7 @@ In this second example, the handler method is again called with a new argument: 
 
 **Part 2: Lab 3 bugs**
 
-This JUnit test case worked as a failure inducing input:
+This JUnit test case worked as a failure inducing input because instead of reversing the array correctly, the method changed values in the back of the array before they could be applied to the front of the array:
 ```
 @Test 
 public void testMultipleReverseInPlace() {
@@ -75,6 +75,8 @@ public void testMultipleReverseInPlace() {
 	assertArrayEquals(new int[]{ 4, 3, 2, 1 }, input1);
 }
 ```
+THis 
+
    This JUnit test case did not induce a failure:
 ```
 @Test
@@ -95,12 +97,11 @@ static void reverseInPlace(int[] arr) {
 The method after it was changed:
 ```
   static void reverseInPlace(int[] arr) {
-    int[] oldData  = new int[arr.length];
-    for(int i=0;i<oldData.length;i++){
-      oldData[i] = arr[i];
-    }
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = oldData[arr.length - i - 1];
+    int holder;
+    for(int i=0;i<arr.length/2;i++){
+      holder = arr[arr.length-1-i];
+      arr[arr.length-1-i] = arr[i];
+      arr[i] = holder;
     }
   }
   ```
